@@ -1,12 +1,12 @@
 function findMinMax(array)
-    min = array[1]
-    max = array[1]
+    minVal = array[1]
+    maxVal = array[1]
 
     for el in array
-        if el < min
-            min = el
-        elseif el > max
-            max = el
+        if el < minVal
+            minVal = el
+        elseif el > maxVal
+            maxVal = el
         end
     end
 
@@ -15,17 +15,17 @@ end
 
 
 function findMinMaxIndex(array)
-    min = array[1]
+    minVal = array[1]
     minInd = 1
-    max = array[1]
+    maxVal = array[1]
     maxInd = 1
 
     for i in eachindex(array)
-        if array[i] < min
-            min = array[i]
+        if array[i] < minVal
+            minVal = array[i]
             minInd = i
-        elseif array[i] > max
-            max = array[i]
+        elseif array[i] > maxVal
+            maxVal = array[i]
             maxInd = i
         end
     end
